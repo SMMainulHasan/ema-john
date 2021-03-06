@@ -1,7 +1,7 @@
 .product{
     display: flex;
     border-bottom: 1px solid lightgray;
-    margin-right: 5px;
+    margin: 5px;
 }
 .add-cart-btn{
     padding: 5px 20px ;
@@ -10,4 +10,7 @@
     border-radius: 5px;
     cursor: pointer;
     color: white;
+}
+.product button{
+    margin-bottom: 5px;
 }

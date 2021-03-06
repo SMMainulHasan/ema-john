@@ -1,0 +1,21 @@
+.shop-container{
+    display: flex;
+}
+.products{
+    width: 70%;
+    border-right: 1px solid lightgray;
+    margin: 5px;
+    margin-left: 10%;
+    max-height: 84vh;
+    width:90%;
+    padding-right:20px;
+    overflow-y: scroll;
+    
+}
+.master{
+    max-height: 84vh;
+    width: 75%;
+    overflow: hidden;
+    border-right: 1px solid lightgray;
+
+}
