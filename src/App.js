@@ -3,12 +3,11 @@ import Header from './component/header/Header';
 import Shop from './component/shop/Shop';
 import Review from './component/Review/Review';
 import Inventory from './component/Inventory/Inventory';
-import Not_Found from './component/Not_Found/Not_Found';
+import NotFound from './component/Not_Found/Not_Found';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import ProductDetail from './component/ProductDetail/ProductDetail';
 
@@ -35,7 +34,7 @@ function App() {
             <ProductDetail></ProductDetail>
           </Route>
           <Route path="*">
-            <Not_Found></Not_Found>
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>

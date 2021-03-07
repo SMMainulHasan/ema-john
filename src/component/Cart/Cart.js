@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './cart.css'
 
 const Cart = (props) => {
@@ -8,7 +7,7 @@ const Cart = (props) => {
         const decimelTwo = num.toFixed(2)
         return Number(decimelTwo);
     }
-    const productPrice = cart.reduce((total, product) => total + product.price, 0);
+    const productPrice = cart.reduce((total, product) => total + product.price*product.quantity, 0);
     // let productPrice = 0;
     // for (let i = 0; i < cart.length; i++) {
     //     const product = cart[i];
@@ -37,9 +36,9 @@ const Cart = (props) => {
             <p>Shipping cost: {convertToNumber(shipping)}</p>
             <p>Tax + Vat: {convertToNumber(tax)}</p>
             <p><strong>Total Price:</strong> {convertToNumber(grandTotal)}</p>
-            <Link to="/review">
-                <button className="add-cart-btn"> order review</button>
-            </Link>
+            {
+                props.children
+            }
         </div>
     );
 };
